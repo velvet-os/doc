@@ -1,0 +1,21 @@
+#!/bin/bash
+set -e #exit on error
+
+export old="$(pwd)"
+
+rm -rf build
+
+cd ..
+git clone https://github.com/thenameisluk/mdplop mp #conflict with executable
+cd mp
+mkdir build
+cd build
+cmake ..
+make -j$(nproc)
+mv -v mdplop ../..
+cd ../..
+
+echo ./mdplop "$old" ./build
+./mdplop "$old" ./build
+
+mv -v ./build "$old"/build

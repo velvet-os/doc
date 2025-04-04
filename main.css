@@ -1,7 +1,7 @@
 body{
     margin: 5mm;
     
-    text-align: center;
+    /*text-align: center;*/
     color: white;
     font-family: Arial, sans-serif;
     background-color: rgb(32, 32, 32);
@@ -18,7 +18,7 @@ body{
     }
  }
 block{
-    white-space: pre-line;
+    white-space: pre;
     display: block;
     padding: 2mm;
     border-radius: 2mm;
@@ -44,7 +44,7 @@ raw{
 }
 
 block{
-    margin: auto;
+    /* margin: auto; */
 
     text-align: left;
     white-space: pre-line;
@@ -70,7 +70,7 @@ img{
 }
 
 special{
-    margin: auto;
+    /* margin: auto; */
 
     white-space: pre-line;
     display: block;
@@ -127,7 +127,7 @@ header{
     font-weight: bolder;
 }
 header#l0{
-    text-align: center;
+    /* text-align: center; */
     font-size: 300%;
     font-weight: bolder;
 }
@@ -146,4 +146,20 @@ header#l3{
 header#h4{
     font-size: 100%;
     font-weight: bolder;
+}
+redb{
+    color: black;
+    background-color: rgb(212, 0, 0);
+}
+greenb{
+    color: black;
+    background-color:rgb(102, 205, 0);
+}
+yellowb{
+    color: black;
+    background-color: rgb(220, 220, 0);
+}
+orangeb{
+    color: black;
+    background-color: rgb(220, 143, 0);
 }
